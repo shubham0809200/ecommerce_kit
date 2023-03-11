@@ -15,7 +15,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Splash Screen
+  /// Splash Screen
   factory EcommerceElement.splashScreenAsset({
     ///
     /// [appImage]
@@ -158,7 +158,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Splash Screen Network Image
+  /// Splash Screen Network Image
   factory EcommerceElement.splashScreenNetwork({
     ///
     /// [appImage]
@@ -302,7 +302,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Slider with assets images
+  /// Slider with assets images
   factory EcommerceElement.sliderAssets({
     ///
     /// [slidersList] is required
@@ -376,7 +376,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Slider with network images
+  /// Slider with network images
   factory EcommerceElement.slider({
     ///
     /// [slidersList] for slider images
@@ -420,7 +420,7 @@ class EcommerceElement extends StatelessWidget {
     ///
     Function()? onTap,
   }) {
-    // create a slider
+    /// create a slider
     return EcommerceElement(
       child: VxSwiper.builder(
         aspectRatio: aspectRatio ?? 16 / 9,
@@ -445,7 +445,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Product card
+  /// Product card
   factory EcommerceElement.productCard({
     ///
     /// [image] is required
@@ -617,7 +617,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Product card with assets image
+  /// Product card with assets image
   factory EcommerceElement.productCardAsset({
     ///
     /// [image] is required
@@ -801,7 +801,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Category card with assets image
+  /// Category card with assets image
   factory EcommerceElement.categoryCardAsset({
     ///
     /// [image] for category image
@@ -939,7 +939,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Category card with network image
+  /// Category card with network image
   factory EcommerceElement.categoryCard({
     ///
     /// [image] for category image
@@ -1076,7 +1076,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Color selector for array for clors
+  /// Color selector for array for clors
   factory EcommerceElement.circularColorBox({
     ///
     /// [color] for color
@@ -1122,7 +1122,7 @@ class EcommerceElement extends StatelessWidget {
             ));
   }
 
-  // Size selector for array for clors
+  /// Size selector for array for clors
   factory EcommerceElement.sizeSelector({
     ///
     /// [sizes] for size selector sizes
@@ -1190,7 +1190,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Cart item
+  /// Cart item
   factory EcommerceElement.cartItem({
     ///
     /// [image] for cart item image
@@ -1361,78 +1361,6 @@ class EcommerceElement extends StatelessWidget {
     Color? productQuantityColor,
   }) {
     return EcommerceElement(
-      // child: Row(
-      //   children: [
-      //     Image.network(
-      //       image!,
-      //       height: height ?? 100,
-      //       width: width ?? 100,
-      //       fit: boxFit ?? BoxFit.cover,
-      //     ).onInkTap(onTap ?? () {}),
-      //     10.widthBox,
-      //     Column(
-      //       crossAxisAlignment: CrossAxisAlignment.start,
-      //       children: [
-      //         title!.text.color(titleColor ?? Colors.black).xl.make(),
-      //         5.heightBox,
-      //         subtitle!.text.color(subtitleColor ?? Colors.black).make(),
-      //         5.heightBox,
-      //         price!.text.color(priceColor ?? Colors.black).make(),
-      //       ],
-      //     ).expand(),
-      //     10.widthBox,
-      //     Column(
-      //       children: [
-      //         Container(
-      //           height: 30,
-      //           width: 30,
-      //           decoration: BoxDecoration(
-      //             color: backgroundColor ?? Colors.black,
-      //             shape: BoxShape.circle,
-      //           ),
-      //           child: const Icon(
-      //             Icons.add,
-      //             color: Colors.white,
-      //           ),
-      //         ).onInkTap(increaseQuantity ?? () {}),
-      //         5.heightBox,
-      //         productQuantity!
-      //             .toString()
-      //             .text
-      //             .color(productQuantityColor ?? Colors.black)
-      //             .make(),
-      //         5.heightBox,
-      //         Container(
-      //           height: 30,
-      //           width: 30,
-      //           decoration: BoxDecoration(
-      //             color: backgroundColor ?? Colors.black,
-      //             shape: BoxShape.circle,
-      //           ),
-      //           child: const Icon(
-      //             Icons.remove,
-      //             color: Colors.white,
-      //           ),
-      //         ).onInkTap(decreaseQuantity ?? () {}),
-      //       ],
-      //     ),
-      //     10.widthBox,
-      //     if (showRemoveButton ?? false)
-      //       Container(
-      //         height: 30,
-      //         width: 30,
-      //         decoration: BoxDecoration(
-      //           color: backgroundColor ?? Colors.black,
-      //           shape: BoxShape.circle,
-      //         ),
-      //         child: const Icon(
-      //           Icons.close,
-      //           color: Colors.white,
-      //         ),
-      //       ).onInkTap(removeItem ?? () {}),
-      //   ],
-      // ),
-
       child: Row(
         children: [
           Column(
@@ -1517,7 +1445,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Profile Image
+  /// Profile Image
   factory EcommerceElement.profileImage({
     ///
     /// [image] for profile image
@@ -1564,7 +1492,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Prfile image circular
+  /// Prfile image circular
   factory EcommerceElement.profileImageCircular({
     ///
     /// [image] for profile image
@@ -1611,7 +1539,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Increase Decrease Quantity
+  /// Increase Decrease Quantity
   factory EcommerceElement.increaseDecreaseQuantity({
     ///
     /// [productQuantity] for product quantity
@@ -1670,162 +1598,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // // Product Slider
-  // factory EcommerceElement.productSlider({
-  //   ///
-  //   /// [image] for product image
-  //   ///
-  //   /// product image
-  //   ///
-  //   String? image,
-  //   ///
-  //   /// [height] for product image height
-  //   ///
-  //   /// product image height
-  //   ///
-  //   double? height,
-  //   ///
-  //   /// [width] for product image width
-  //   ///
-  //   /// product image width
-  //   ///
-  //   double? width,
-  //   ///
-  //   /// [boxFit] for product image box fit
-  //   ///
-  //   /// product image box fit
-  //   ///
-  //   BoxFit? boxFit,
-  //   ///
-  //   /// [title] for product title
-  //   ///
-  //   /// product title
-  //   ///
-  //   String? title,
-  //   ///
-  //   /// [titleColor] for product title color
-  //   ///
-  //   /// product title color
-  //   ///
-  //   Color? titleColor,
-  //   ///
-  //   /// [titleFontFamily] for product title font family
-  //   ///
-  //   /// product title font family
-  //   ///
-  //   String? titleFontFamily,
-  //   ///
-  //   /// [subtitle] for product subtitle
-  //   ///
-  //   /// product subtitle
-  //   ///
-  //   String? subtitle,
-  //   ///
-  //   /// [subtitleColor] for product subtitle color
-  //   ///
-  //   /// product subtitle color
-  //   ///
-  //   Color? subtitleColor,
-  //   ///
-  //   /// [subtitleFontFamily] for product subtitle font family
-  //   ///
-  //   /// product subtitle font family
-  //   ///
-  //   String? subtitleFontFamily,
-  //   ///
-  //   /// [price] for product price
-  //   ///
-  //   /// product price
-  //   ///
-  //   String? price,
-  //   ///
-  //   /// [priceColor] for product price color
-  //   ///
-  //   /// product price color
-  //   ///
-  //   Color? priceColor,
-  //   ///
-  //   /// [priceFontFamily] for product price font family
-  //   ///
-  //   /// product price font family
-  //   ///
-  //   String? priceFontFamily,
-  //   ///
-  //   /// [showRemoveButton] for show remove button
-  //   ///
-  //   /// show remove button
-  //   ///
-  //   bool? showRemoveButton,
-  //   ///
-  //   /// [removeItem] for remove item
-  //   ///
-  //   /// remove item
-  //   ///
-  //   Function()? removeItem,
-  //   ///
-  //   /// [productQuantity] for product quantity
-  //   ///
-  //   /// product quantity
-  //   ///
-  //   int? productQuantity,
-  //   ///
-  //   /// [productQuantityColor] for product quantity color
-  //   ///
-  //   /// product quantity color
-  //   ///
-  //   Color? productQuantityColor,
-  //   ///
-  //   /// [backgroundColor] for background color
-  //   ///
-  //   /// background color
-  //   ///
-  //   Color? backgroundColor,
-  // }) {
-  //   return EcommerceElement(
-  //     child: VStack(
-  //       [
-  //         Image.network(
-  //           image ?? 'https://picsum.photos/200/300',
-  //           height: height ?? 100,
-  //           width: width ?? 100,
-  //           fit: boxFit ?? BoxFit.cover,
-  //         ),
-  //         5.heightBox,
-  //         (title ?? '')
-  //             .text
-  //             .color(titleColor ?? Colors.black)
-  //             .fontFamily(titleFontFamily ?? 'Poppins')
-  //             .make(),
-  //         5.heightBox,
-  //         (subtitle ?? '')
-  //             .text
-  //             .color(subtitleColor ?? Colors.black)
-  //             .fontFamily(subtitleFontFamily ?? 'Poppins')
-  //             .make(),
-  //         5.heightBox,
-  //         (price ?? '')
-  //             .text
-  //             .color(priceColor ?? Colors.black)
-  //             .fontFamily(priceFontFamily ?? 'Poppins')
-  //             .make(),
-  //         5.heightBox,
-  //         if (showRemoveButton ?? false)
-  //           const Icon(
-  //             Icons.remove_circle,
-  //             color: Colors.red,
-  //           ).box.roundedSM.make().onInkTap(removeItem ?? () {}),
-  //         5.heightBox,
-  //         EcommerceElement.increaseDecreaseQuantity(
-  //           productQuantity: productQuantity,
-  //           productQuantityColor: productQuantityColor,
-  //           backgroundColor: backgroundColor,
-  //         ),
-  //       ],
-  //     ),
-  //   );
-  // }
-
-  // Input Field
+  /// Input Field
   factory EcommerceElement.inputField({
     ///
     /// [title] for input field title
@@ -1997,7 +1770,7 @@ class EcommerceElement extends StatelessWidget {
     ));
   }
 
-  // Button
+  /// Button
   factory EcommerceElement.button({
     ///
     /// [onPress] for button on press
@@ -2052,7 +1825,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Login Screen
+  /// Login Screen
   factory EcommerceElement.loginScreen({
     ///
     /// [logo] for logo
@@ -2148,7 +1921,8 @@ class EcommerceElement extends StatelessWidget {
             onPress: onTapLogin,
           ),
           20.heightBox,
-          // dont have account
+
+          /// dont have account
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -2162,7 +1936,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Sign Up Screen
+  /// Sign Up Screen
   factory EcommerceElement.signUpScreen({
     ///
     /// [logo] for logo
@@ -2297,7 +2071,8 @@ class EcommerceElement extends StatelessWidget {
             onPress: onTapSignUp,
           ),
           20.heightBox,
-          // dont have account
+
+          /// dont have account
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -2314,7 +2089,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // remove product alert boc
+  /// remove product alert boc
   factory EcommerceElement.removeProductAlertBoxOne({
     ///
     /// [onTapYes] for on tap yes
@@ -2355,7 +2130,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // remove product alert boc
+  /// remove product alert boc
   factory EcommerceElement.removeProductAlertBoxTwo({
     ///
     /// [onTapYes] for on tap yes
@@ -2404,7 +2179,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Delete Account Alert Box
+  /// Delete Account Alert Box
   factory EcommerceElement.deleteAccount({
     ///
     /// [onTapYes] for on tap yes
@@ -2582,12 +2357,10 @@ class EcommerceElement extends StatelessWidget {
       deleteIconColor: deleteIconColor ?? Colors.red,
       visualDensity: VisualDensity.compact,
       shadowColor: Colors.grey,
-    ).box.make().onInkTap(() {
-      onTap ?? () {};
-    }));
+    ).box.make().onInkTap(onTap ?? () {}));
   }
 
-  // Add to cart button
+  /// Add to cart button
   factory EcommerceElement.addToCartButton({
     ///
     /// [onTap] for on tap
@@ -2627,7 +2400,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Hedaing
+  /// Hedaing
   factory EcommerceElement.heading({
     ///
     /// [title] for title
@@ -2743,7 +2516,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Featured Button
+  /// Featured Button
   factory EcommerceElement.featuredButtonAsset({
     ///
     /// [image] for image
@@ -2866,7 +2639,7 @@ class EcommerceElement extends StatelessWidget {
             .onInkTap(onTap ?? () {}));
   }
 
-  // Slide Show of product images
+  /// Slide Show of product images
   factory EcommerceElement.slideShow({
     ///
     /// [images] for images
@@ -2935,7 +2708,7 @@ class EcommerceElement extends StatelessWidget {
     );
   }
 
-  // Rating
+  /// Rating
   factory EcommerceElement.rating({
     ///
     /// [onRatingUpdate] for on rating update
