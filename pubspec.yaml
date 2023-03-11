@@ -1,6 +1,6 @@
 name: ecommerce_kit
 description: This package is a collection of pre-built eCommerce components. With this package, developers can save time and effort when building eCommerce applications in Flutter.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/shubham0809200/ecommerce_kit
 
 environment:
